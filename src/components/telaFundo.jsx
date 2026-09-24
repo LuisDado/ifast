@@ -1,24 +1,24 @@
 import "./telaFundo.css";
 
+import { Link } from "react-router-dom";
+
 function Fundo() {
   return (
     <div className="pagina">
 
-      <a href="../assets/pages/Tutorial">
+      <Link to="/tutorial">
         <button>Tutorial</button>
-      </a>
+      </Link>
 
-      <a href="../assets/pages/EscolherTime">
+      <Link to="/escolher-time">
         <button>Escolher time</button>
-      </a>
+      </Link>
 
-      <a href="../assets/pages/Configurar">
+      <Link to="/configurar">
         <button>Configurações</button>
-      </a>
+      </Link>
 
-      <a href="../assets/pages/Sair">
-        <button>Sair</button>
-      </a>
+      <button>Sair</button>
 
     </div>
   );
